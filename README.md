@@ -76,6 +76,12 @@ A TypeScript Express.js API designed for civic issue management and reporting in
 ```
 ├── src/
 │   ├── index.ts          # Main Express application
+    ├── openai_client.ts  # OpenAI API client
+    ├── controllers/
+         ├── analyze.ts   # Controller for /analyze endpoint
+         ├── chat.ts      # Controller for /chat endpoint
+         ├── classify.ts  # Controller for /classify endpoint
+         └── report.ts    # Controller for /report endpoint
 │   └── routes/
 │       └── api.ts        # API routes
 ├── netlify/
@@ -84,6 +90,8 @@ A TypeScript Express.js API designed for civic issue management and reporting in
 ├── dist/                 # Build output
 ├── netlify.toml          # Netlify configuration
 ├── tsconfig.json         # TypeScript configuration
+├── .env                  # Secret variables
+├── API_Documentation.md  # API Endpoints documentation
 └── package.json          # Dependencies and scripts
 ```
 
